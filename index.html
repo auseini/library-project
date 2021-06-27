@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Library</title>
+<link rel="stylesheet" href="styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+		<header>
+		<div class="title">
+			<h1>Library</h1>
+		</div>
+
+		<div class="bookCounter">
+			<h2 id="log">Log</h2>
+			<div id="bookCount" class="logText">
+				<h3 id="books">Book Count: </h3>
+				<span id="total">0</span>
+			
+			</div>
+			<div id="booksReadDiv" class="logText">
+				<h4 id="booksRead">Read: </h4>
+				<span id="read">0</span>
+			</div>
+
+		</div>
+		</header>
+		<div class="buttonContainer">
+			<button onclick="openForm()">New Book</button>
+		</div>
+		<div id="bookHolder" class="bookHolder">
+			
+		</div>
+		
+	</main>
+	<div id="createForm" class="form">
+		<div class="formContainer">
+			<button class="formClose" onclick="closeForm()"></button>
+			<p class="newBookText">Add New Book</p>
+			<form name="form">
+				<label>Title:<input id="title" class="textInput" type="text" placeholder="Title"></label>
+				<label>Author:<input id="author" class="textInput" type="text" placeholder="Author"></label>
+				<label># of Pages:<input id="pages" class="textInput" type="number"></label>
+				<label>Completed
+				<select id="completed" class="textInput" type="text" placeholder="Completed">
+					<option value="true">Yes</option>
+					<option value="false">No</option>	
+				</select>
+			</label>
+			</form>
+			
+			<button type="submit" onclick="createBook()" id="bookSubmit">Add Book</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

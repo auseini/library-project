@@ -1,0 +1,263 @@
+html, body{
+	margin: 0;
+	min-height: 100%;
+	background-image: linear-gradient(146deg, rgba(44, 35, 109, 0.5) 0%, rgba(44, 35, 109, 0.5) 14.286%,rgba(64, 54, 108, 0.5) 14.286%, rgba(64, 54, 108, 0.5) 28.572%,rgba(83, 72, 106, 0.5) 28.572%, rgba(83, 72, 106, 0.5) 42.858%,rgba(103, 91, 105, 0.5) 42.858%, rgba(103, 91, 105, 0.5) 57.144%,rgba(123, 110, 103, 0.5) 57.144%, rgba(123, 110, 103, 0.5) 71.43%,rgba(142, 128, 102, 0.5) 71.43%, rgba(142, 128, 102, 0.5) 85.716%,rgba(162, 147, 100, 0.5) 85.716%, rgba(162, 147, 100, 0.5) 100.002%),linear-gradient(349deg, rgb(203, 4, 7) 0%, rgb(203, 4, 7) 14.286%,rgb(178, 9, 6) 14.286%, rgb(178, 9, 6) 28.572%,rgb(152, 13, 5) 28.572%, rgb(152, 13, 5) 42.858%,rgb(127, 18, 4) 42.858%, rgb(127, 18, 4) 57.144%,rgb(101, 22, 3) 57.144%, rgb(101, 22, 3) 71.43%,rgb(76, 27, 2) 71.43%, rgb(76, 27, 2) 85.716%,rgb(50, 31, 1) 85.716%, rgb(50, 31, 1) 100.002%);
+	background-attachment: fixed;
+}
+
+main{
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px ;
+	padding: 0;
+	flex-direction: column;
+}
+header{
+	height: 150px;
+	width: 80vw;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	display: flex;
+}
+h2{
+	text-align: center;
+	margin-top: 5px;
+	font-size: 30px;
+	min-width: 100%;
+}
+h1{
+	height: 50px;
+	width: 200px;
+	margin: 0;
+	font-size: 50px;
+	vertical-align: middle;
+	text-align: left;
+}
+h3, h4{
+	font-size: 18px;
+	padding: 0;
+	margin: 5px;
+	width: 150px;
+}
+span{
+	font-size: 20px;
+	text-align: right;
+	width: 110px;
+	margin: 0;
+	justify-content: right;
+	align-items: center;
+	vertical-align: middle;
+	padding-top: 5px;
+	padding-right: 15px;
+}
+label{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	padding: 10px;
+	font-size: 20px;
+}
+p{
+	width: 100%;
+	height: 25px;
+	background: transparent;
+	color: white;
+	font-size: 20px;
+	margin: 0;
+	padding-top: 15px;
+
+	/*styling to hyphenate when needed*/
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	
+
+}
+button{
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	position: relative;
+	right: 10;
+}
+button:active{
+	background: lightgray;
+}
+span{
+	width: 80%;
+}
+.delete{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	border-top: solid 2px rgb(80, 80, 80, 0.2);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 20%;
+	color: rgb(80, 80, 80, 0.6);
+	font-size: x-large;
+	background: rgb(184, 89, 73)
+}
+.delete:active{
+	background: rgb(143, 74, 62)
+}
+.newBookText{
+	color: black;
+	text-align: center;
+	justify-content: center;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+.buttonContainer{
+	margin-top: 20px;
+	display:inline-block;
+	text-align: right;
+	width: 80vw;
+	justify-content: right;
+	align-items: center;
+}
+.bookTitle{
+	font-size: 30px;
+	height: 100%;
+}
+.bookCounter{
+	background: transparent;
+	width: 270px;
+	height: 150px;
+	align-items: right;
+	border-radius: 5px;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.title{
+	height: auto;
+	width: 200px;
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+}
+.logText{
+	display: flex;
+	flex-direction: row;
+}
+.bookHolder{
+	grid-template-columns: auto auto auto;
+	position: relative;
+	margin-top: 15px;
+	border: 2px black solid;
+	width: 81vw;
+	height: 60vh;
+	overflow: auto;
+}
+
+/* styling for create book form */
+.form{
+	display: none;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	vertical-align: center;
+	background: rgb(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 90vh;
+	backdrop-filter: blur(3px);
+}
+.textInput{
+	height: 35px;
+	margin: 0;
+	border: lightgray solid 1px;
+	border-radius: 3px;
+}
+.formClose{
+	position:relative;
+	width: 30px;
+	height: 30px;
+	right: 0;
+	margin-left: 90%;
+	margin-top: 5px;
+	background: black;
+}
+#bookSubmit{
+	width: 125px;
+	height: 50px;
+	margin-top: 6%;
+	background: rgb(53, 139, 252);
+	font-size: 20px;
+	color: white;
+}
+.formContainer {
+	background: beige;
+	width: 20%;
+	height: 40%;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*styling to add card flip*/
+.bookCard{
+	width: 200px;
+	height: 250px;
+	display: inline-block;
+	margin: 10px;
+	padding:0;
+	background: transparent;
+	perspective: 1000px;
+}
+.bookCardInner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	text-align: center;
+}
+.bookCard:hover .bookCardInner{
+	transform: rotateY(-180deg);
+}
+.bookCardFront, .bookCardBack{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	padding: 0;
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.bookCardBack{
+	background-color: rgb(184, 89, 73);
+	transform: rotateY(-180deg);
+}
+.bookCardFront{
+	background-color: rgb(184, 89, 73);
+}
+/* stylign for scroll bar */
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-track{
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+	background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #555;
+}
